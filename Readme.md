@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [София  Дьяченко](https://up.htmlacademy.ru/htmlcss/18/user/476849).
-* Наставник: [Владимир Кабыш](https://github.com/vkabish).
+* Наставник: [Владимир Кабыш](https://up.htmlacademy.ru/htmlcss/18/user/78399).
 
 ---
 
