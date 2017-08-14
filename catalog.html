@@ -11,7 +11,7 @@
     </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a class="site-navigation-current" href="catalog.html">Каталог</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
         <li><a href="order.html">Доставка и оплата</a></li>
         <li><a href="info.html">О Компании</a></li>
       </ul>
@@ -22,8 +22,8 @@
       </ul>
     </nav>
     <p class="main-header-basic-info">
-      c 10 до 20, ежедневно<br>
-      8 812 450-25-25
+      <span class="work-time">c 10 до 20, ежедневно</span><br>
+      <span class="number-phone">8 812 450-25-25</span>
     </p>
   </header>
   <main class="container">
@@ -48,23 +48,23 @@
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio"
-              type="radio" name="percent-value-group" value="0%">
-              0%
+              type="radio" name="percent-value-group" value="0%" id="radio1">
+              <label for="radio1">0%</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio"
-              type="radio" name="percent-value-group" value="less-10%">
-              до 10%
+              type="radio" name="percent-value-group" value="less-10%" id="radio2">
+              <label for="radio2">до 10%</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio"
-              type="radio" name="percent-value-group" value="less-30%">
-              до 30%
+              type="radio" name="percent-value-group" value="less-30%" id="radio3">
+              <label for="radio3">до 30%</label>
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio"
-              type="radio" name="percent-value-group" value="more-30%">
-              выше 30%
+              type="radio" name="percent-value-group" value="more-30%" id="radio4">
+              <label for="radio4">выше 30%</label>
             </li>
           </ul>
         </fieldset>
@@ -73,28 +73,28 @@
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="chocolate" checked>
-              шоколадные
+              type="checkbox" name="chocolate" checked id="check1">
+              <label for="check1">шоколадные</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="sugar" checked>
-              сахарные присыпки
+              type="checkbox" name="sugar" checked id="check2">
+              <label for="check2">сахарные присыпки</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="fruit" checked>
-              фрукты
+              type="checkbox" name="fruit" checked id="check3">
+              <label for="check3">фрукты</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="syrup" checked>
-              сиропы
+              type="checkbox" name="syrup" checked id="check4">
+              <label for="check4">сиропы</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="jam" checked>
-              джемы
+              type="checkbox" name="jam" checked id="check5">
+              <label for="check5">джемы</label>
             </li>
           </ul>
         </fieldset>
@@ -115,10 +115,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Cливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
           </p>
-          <b>
-            310 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              310 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -131,10 +133,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
           </p>
-          <b>
-            380 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              380 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -147,10 +151,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
           </p>
-          <b>
-            355 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              355 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -163,10 +169,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
           </p>
-          <b>
-            415 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              415 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -179,10 +187,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочное с брусничным джемом">
             </a>
           </p>
-          <b>
-            325 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              325 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -195,10 +205,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочно-черничное с цельными ягодами черники">
             </a>
           </p>
-          <b>
-            410 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              410 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -211,10 +223,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочно-лимонное с карамельной присыпкой">
             </a>
           </p>
-          <b>
-            375 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              375 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -227,10 +241,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочное с шоколадной стружкой">
             </a>
           </p>
-          <b>
-            320 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              320 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -243,10 +259,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочно-ванильное с кусочками шоколада">
             </a>
           </p>
-          <b>
-            440 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              440 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -259,10 +277,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочное с ментоловым сиропом">
             </a>
           </p>
-          <b>
-            435 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              435 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -275,10 +295,12 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочное с кусочками черного шоколада">
             </a>
           </p>
-          <b>
-            355 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              355 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -291,19 +313,25 @@
               <img src="http://via.placeholder.com/200x200" width="200" height="200" alt="Сливочное с мятным сиропом">
             </a>
           </p>
-          <b>
-            420 ₽
-            <span class="weight">/кг</span>
-          </b>
+          <p>
+            <b>
+              420 ₽
+              <span class="weight">/кг</span>
+            </b>
+          </p>
         </li>
       </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
-        <li class="pagination-item"><a href="#">5</a></li>
-      </ul>
+      <div class="pagination-block">
+        <ul class="pagination-list">
+          <li class="pagination-item"><a></a></li>
+          <li class="pagination-item"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">5</a></li>
+          <li class="pagination-item"><a href="#"></a></li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -328,10 +356,14 @@
     <p class="footer-copyright">
       <a class="html-academy-logotip" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="http://via.placeholder.com/50x50" width="50" height="50" alt="Логотип HTML Academy">
-      </a>
-      <a class="html-academy-logotip" href="https://htmlacademy.ru/intensive/htmlcss"><br>
-        <b>Сделано в HTML Academy 2017</b>
-      </a>
+      </a><br>
+      <b>
+        Сделано в
+        <a class="html-academy-logotip" href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML Academy
+        </a>
+        © 2017
+      </b>
     </p>
   </footer>
 </body>
