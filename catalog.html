@@ -6,34 +6,109 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img src="http://via.placeholder.com/200x100" width="200" height="100" alt="Логотип &quot;Gllacy Shop&quot;">
+    <a class="main-header-logo">
+      <img src="http://via.placeholder.com/200x100" width="200" height="100"
+      alt="Логотип &quot;Gllacy Shop&quot;">
     </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
-        <li><a href="order.html">Доставка и оплата</a></li>
-        <li><a href="info.html">О Компании</a></li>
+        <li class="current">
+          <a href="catalog.html">Каталог</a>
+          <div class="dropdown-catalog">
+            <ul class="dropdown-catalog-list">
+              <li class="dropdown-catalog-item">
+                <a href="#">Новинки</a>
+              </li>
+              <li class="dropdown-catalog-item">
+                <a href="catalog.html">Сливочное</a>
+              </li>
+              <li class="dropdown-catalog-item">
+                <a href="#">Щербеты</a>
+              </li>
+              <li class="dropdown-catalog-item">
+                <a href="#">Фруктовый лед</a>
+              </li>
+              <li class="dropdown-catalog-item">
+                <a href="#">Мелорин</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="search-link">Поиск</li>
-        <li class="login-link">Вход</li>
-        <li class="cart-link">Корзина</li>
+        <li class="search-link">
+          Поиск
+          <section class="modal modal-search">
+            <h2 class="visually-hidden">Поиск</h2>
+            <form class="menu-field" action="#" method="get">
+              <input type="text" name="search" placeholder="Что ищем?">
+            </form>
+          </section>
+        </li>
+        <li class="login-link">
+          Вход
+          <section class="modal modal-login">
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <form class="login-form" action="#" method="post">
+              <p>
+                <input class="email-icon-user" type="text" name="login-email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p class="login-info">
+                <a href="#">Забыли пароль?</a><br>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </section>
+        </li>
+        <li class="shop-link">
+          Корзина
+          <section class="modal modal-shop">
+            <h2 class="visually-hidden">Список покупок</h2>
+            <ul class="shop-list">
+              <li class="shop-item">
+                <p class="shop-item-info">
+                  <span class="shop-item-close">x</span>
+                  <img src="№" alt="Фото мороженого">
+                  <span class="shop-item-description">Пломбир с апельсиновым джемом</span>
+                  <span class="shop-item-description">1,5 кг х</span>200 руб.
+                  <span class="shop-item-description">300 руб.</span>
+                </p>
+              </li>
+              <li class="shop-item">
+                <p class="shop-item-info">
+                  <span class="shop-item-close">x</span>
+                  <img src="№" alt="Фото мороженого">
+                  <span class="shop-item-description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                  <span class="shop-item-description">1,5 кг х</span>300 руб.
+                  <span class="shop-item-description">450 руб.</span>
+                </p>
+              </li>
+            </ul>
+            <hr>
+            <span class="sum">Итого: 750 руб.</span><br>
+            <button class="button" type="submit">Оформить заказ</button>
+          </section>
+        </li>
       </ul>
     </nav>
     <p class="main-header-basic-info">
       <span class="work-time">c 10 до 20, ежедневно</span><br>
-      <span class="number-phone">8 812 450-25-25</span>
+      <span class="phone">8 812 450-25-25</span>
     </p>
   </header>
   <main class="container">
-    <h1 class="visually-hidden">Ассортимент мороженого</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li class="breadcrumbs-current">Сливочное</li>
     </ul>
-    <h2 class="heading-in-main">Сливочное мороженое</h2>
+    <h1 class="heading-in-main">Сливочное мороженое</h1>
     <section class="filters">
       <h3 class="visually-hidden">Фильтр мороженого</h3>
       <form class="filter" action="#" method="get">
@@ -53,7 +128,7 @@
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio"
-              type="radio" name="percent-value-group" value="less-10%" id="radio2">
+              type="radio" name="percent-value-group" value="less-10%" id="radio2" checked>
               <label for="radio2">до 10%</label>
             </li>
             <li class="filter-option">
@@ -73,27 +148,27 @@
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="chocolate" checked id="check1">
+              type="checkbox" name="chocolate" id="check1" checked>
               <label for="check1">шоколадные</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="sugar" checked id="check2">
+              type="checkbox" name="sugar" id="check2" checked>
               <label for="check2">сахарные присыпки</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="fruit" checked id="check3">
+              type="checkbox" name="fruit" id="check3">
               <label for="check3">фрукты</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="syrup" checked id="check4">
+              type="checkbox" name="syrup" id="check4">
               <label for="check4">сиропы</label>
             </li>
             <li class="filter-option-check">
               <input class="visually-hidden filter-input filter-input-checkbox"
-              type="checkbox" name="jam" checked id="check5">
+              type="checkbox" name="jam" id="check5">
               <label for="check5">джемы</label>
             </li>
           </ul>
@@ -121,6 +196,9 @@
               <span class="weight">/кг</span>
             </b>
           </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -138,6 +216,9 @@
               380 ₽
               <span class="weight">/кг</span>
             </b>
+          </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
           </p>
         </li>
         <li class="catalog-item">
@@ -157,6 +238,9 @@
               <span class="weight">/кг</span>
             </b>
           </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -174,6 +258,9 @@
               415 ₽
               <span class="weight">/кг</span>
             </b>
+          </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
           </p>
         </li>
         <li class="catalog-item">
@@ -193,6 +280,9 @@
               <span class="weight">/кг</span>
             </b>
           </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -210,6 +300,9 @@
               410 ₽
               <span class="weight">/кг</span>
             </b>
+          </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
           </p>
         </li>
         <li class="catalog-item">
@@ -229,6 +322,9 @@
               <span class="weight">/кг</span>
             </b>
           </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -246,6 +342,9 @@
               320 ₽
               <span class="weight">/кг</span>
             </b>
+          </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
           </p>
         </li>
         <li class="catalog-item">
@@ -265,6 +364,9 @@
               <span class="weight">/кг</span>
             </b>
           </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -282,6 +384,9 @@
               435 ₽
               <span class="weight">/кг</span>
             </b>
+          </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
           </p>
         </li>
         <li class="catalog-item">
@@ -301,6 +406,9 @@
               <span class="weight">/кг</span>
             </b>
           </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
+          </p>
         </li>
         <li class="catalog-item">
           <h3>
@@ -319,12 +427,15 @@
               <span class="weight">/кг</span>
             </b>
           </p>
+          <p>
+            <a class="button ice-cream-promo-button" href="#">Быстрый просмотр</a>
+          </p>
         </li>
       </ul>
       <div class="pagination-block">
         <ul class="pagination-list">
           <li class="pagination-item"><a></a></li>
-          <li class="pagination-item"><a>1</a></li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>
@@ -347,10 +458,10 @@
     <nav class="footer-navigation">
       <h3 class="visually-hidden">Информация для заинтресованных лиц</h3>
       <ul class="footer-navigation-list">
-        <li class="footer-navigation-item"><a href="doc/supply.pdf">Для поставщиков</a></li>
-        <li class="footer-navigation-item"><a href="doc/production.pdf">О производстве</a></li>
-        <li class="footer-navigation-item"><a href="doc/documents.pdf">Наши документы</a></li>
-        <li class="footer-navigation-item"><a href="doc/standarts.pdf">Экологические стандарты</a></li>
+        <li class="footer-navigation-item"><a href="#">Для поставщиков</a></li>
+        <li class="footer-navigation-item"><a href="#">О производстве</a></li>
+        <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
+        <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
       </ul>
     </nav>
     <p class="footer-copyright">
