@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif ;
+  font-size: 16px;
+  line-height: 22px;
+}
+.heading-in-main {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: bold;
+  }
+.visually-hidden {
+  display: none;
+}
+
+.stock-heading {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: bold;
+  }
+.ice-cream-promo-font {
+  color: #ffffff;
+  font-weight: medium;
+      }
+.blog-post-heading {
+    color: #323232;
+  font-weight: medium;
+  }
+.blog-post-announce {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: bold;
+  }
+.modal-feedback-heading {
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+  font-weight: medium;
+  }
