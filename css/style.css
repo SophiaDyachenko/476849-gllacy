@@ -3,39 +3,34 @@ body {
   font-size: 16px;
   line-height: 22px;
 }
-.heading-in-main {
-  font-size: 35px;
-  line-height: 41px;
-  color: #ffffff;
-  font-weight: bold;
-  }
 .visually-hidden {
   display: none;
 }
-
-.stock-heading {
+.middle-font {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
   font-weight: bold;
-  }
-.ice-cream-promo-font {
+}
+.ice-cream-description h3 {
   color: #ffffff;
   font-weight: medium;
-      }
-.blog-post-heading {
-    color: #323232;
+}
+.blog-post h2 {
+  color: #323232;
   font-weight: medium;
-  }
-.blog-post-announce {
+}
+.blog-post p {
   font-size: 24px;
   line-height: 30px;
-  color: #323232;
   font-weight: bold;
-  }
+}
+.blog-post a {
+  color: #323232;
+}
 .modal-feedback-heading {
   font-size: 24px;
   line-height: 28px;
   color: #323232;
   font-weight: medium;
-  }
+}
