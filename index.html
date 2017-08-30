@@ -37,7 +37,7 @@
           </section>
         </li>
         <li>
-          <button class="button grey-button login-button" type="button">Вход</button>
+          <a class="login-link" href="login.html">Вход</a>
           <section class="modal modal-login">
             <h2 class="visually-hidden">Личный кабинет</h2>
             <form class="login-form" action="#" method="post">
@@ -58,7 +58,7 @@
           </section>
         </li>
         <li>
-          <button class="button grey-button shop-button" type="button">Корзина</button>
+          <a class="shop-link" href="shop.html">Корзина</a>
           <section class="modal modal-shop">
             <h2 class="visually-hidden">Список покупок</h2>
             <a class="button" href="#order">Оформить заказ</a>
@@ -197,23 +197,23 @@
           <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого
             собственного производства на развес</p>
             <ul class="features-list">
-              <li>
+              <li class="icon-feature icon-position-1">
                 <h3 class="visually-hidden">Технологии</h3>
                 <p>Все наше мороженое изготавливается на собственном производстве,
                   с использованием современного оборудования и проверенных временем технологий.</p>
                 </li>
-                <li>
+                <li class="icon-feature icon-position-2">
                   <h3 class="visually-hidden">Ингредиенты</h3>
                   <p>Для приготовления мороженого используются настоящие сливки и молоко
                     высочайшего качества. Все дополнительные ингредиенты и добавки произведены
                     из натурального, экологически чистого сырья.</p>
                   </li>
-                  <li>
+                  <li class="icon-feature icon-position-3">
                     <h3 class="visually-hidden">Поставщики</h3>
                     <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств
                       и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                     </li>
-                    <li>
+                    <li class="icon-feature icon-position-4">
                       <h3 class="visually-hidden">Доставка</h3>
                       <p>Доставка нашего мороженого до заказчиков осуществляется в специальном
                         термопаке, который не дает мороженому растаять в пути и позволяет
@@ -297,13 +297,16 @@
                     <h2 class="modal-feedback-heading">Мы обязательно вам ответим!</h2>
                     <form class="feedback-form" action="#" method="post">
                       <p>
-                        <input class="feedback-icon-user" type="text" name="login" placeholder="Как вас зовут?">
+                        <label class="visually-hidden" for="name">Ваше имя</label>
+                        <input class="feedback-icon-user" type="text" name="login" placeholder="Как вас зовут?" id="name">
                       </p>
                       <p>
-                        <input class="feedback-icon-email" type="text" name="feedback-email" placeholder="Ваша почта для ответа?">
+                        <label class="visually-hidden" for="email">Ваша почта</label>
+                        <input class="feedback-icon-email" type="text" name="feedback-email" placeholder="Ваша почта для ответа?" id="email">
                       </p>
                       <p>
-                        <input class="feedback-icon-comments" type="text" name="comments" placeholder="Напишите что-нибудь...">
+                        <label class="visually-hidden" for="comment">Ваш комментарий</label>
+                        <input class="feedback-icon-comments" type="text" name="comments" placeholder="Напишите что-нибудь..." id="comment">
                       </p>
                       <button class="button" type="submit">Отправить</button>
                     </form>
