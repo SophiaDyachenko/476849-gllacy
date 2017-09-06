@@ -7,7 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="catalog-page">
   <header class="main-header">
     <a class="logo" href="index.html">
       <img src="img/logo.svg" width="154" height="64"
@@ -16,10 +16,10 @@
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li class="site-navigation-item">
-          <a class="menu-item-current" href="catalog.html">Каталог</a>
+          <a class="catalog-current" href="catalog.html">Каталог</a>
           <ul class="submenu">
             <li><a href="#new"><strong>Новинки</strong></a></li>
-            <li><a class="submenu-item-current" href="catalog.html">Сливочное</a></li>
+            <li><a class="sundae-current" href="catalog.html">Сливочное</a></li>
             <li><a href="#sherbet">Щербеты</a></li>
             <li><a href="#fruit-ice">Фруктовый лед</a></li>
             <li><a href="#melorin">Мелорин</a></li>
@@ -30,7 +30,7 @@
       </ul>
       <ul class="user-navigation">
         <li class="user-navigation-item">
-          <button class="search-button" type="button">Поиск</button>
+          <button class="grey-button search-button" type="button">Поиск</button>
           <section class="modal modal-search">
             <form class="menu-field" action="#" method="get">
               <label class="visually-hidden" for="input-search">Поиск</label>
@@ -39,7 +39,7 @@
           </section>
         </li>
         <li class="user-navigation-item">
-          <a class="login-link" href="login.html">Вход</a>
+          <a class="grey-button login-link" href="login.html">Вход</a>
           <section class="modal modal-login">
             <h2 class="visually-hidden">Личный кабинет</h2>
             <form class="login-form" action="#" method="post">
@@ -60,7 +60,7 @@
           </section>
         </li>
         <li class="user-navigation-item">
-          <a class="shop-link" href="shop.html">Корзина <span class="count">2 товара</span></a>
+          <a class="grey-button shop-link" href="shop.html">2 товара</a>
           <section class="modal modal-shop">
             <h2 class="visually-hidden">Список покупок</h2>
             <ul class="shop-list">
@@ -108,14 +108,14 @@
         <fieldset>
           <legend>Сортировка:</legend>
           <select class="separation-select" name="separation">
-            <option value="popular">По популярности</option>
-            <option value="cheap">Сначала недорогие</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="fat-content">По жирности</option>
+            <option value="popular">по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fat-content">по жирности</option>
           </select>
         </fieldset>
         <fieldset>
-          <legend>Цена: 100 руб-500 руб</legend>
+          <legend>Цена: 100 руб. - 500 руб.</legend>
           <input type="range" name="range" min="100" max="500" step="100">
         </fieldset>
         <fieldset>
@@ -129,17 +129,17 @@
             <li class="filter-option">
               <input class="filter-input filter-input-radio"
               type="radio" name="percent-value-group" value="less-10%" id="radio2">
-              <label for="radio2">До 10%</label>
+              <label for="radio2">до 10%</label>
             </li>
             <li class="filter-option">
               <input class="filter-input filter-input-radio"
               type="radio" name="percent-value-group" value="less-30%" id="radio3">
-              <label for="radio3">До 30%</label>
+              <label for="radio3">до 30%</label>
             </li>
             <li class="filter-option">
               <input class="filter-input filter-input-radio"
               type="radio" name="percent-value-group" value="more-30%" id="radio4">
-              <label for="radio4">Выше 30%</label>
+              <label for="radio4">выше 30%</label>
             </li>
           </ul>
         </fieldset>
@@ -149,27 +149,27 @@
             <li class="filter-option">
               <input class="filter-input filter-input-checkbox"
               type="checkbox" name="chocolate" id="check1" checked>
-              <label for="check1">Шоколадные</label>
+              <label for="check1">шоколадные</label>
             </li>
             <li class="filter-option-check">
               <input class="filter-input filter-input-checkbox"
               type="checkbox" name="sugar" id="check2" checked>
-              <label for="check2">Сахарные присыпки</label>
+              <label for="check2">сахарные присыпки</label>
             </li>
             <li class="filter-option-check">
               <input class="filter-input filter-input-checkbox"
               type="checkbox" name="fruit" id="check3">
-              <label for="check3">Фрукты</label>
+              <label for="check3">фрукты</label>
             </li>
             <li class="filter-option-check">
               <input class="filter-input filter-input-checkbox"
               type="checkbox" name="syrup" id="check4">
-              <label for="check4">Сиропы</label>
+              <label for="check4">сиропы</label>
             </li>
             <li class="filter-option-check">
               <input class="filter-input filter-input-checkbox"
               type="checkbox" name="jam" id="check5">
-              <label for="check5">Джемы</label>
+              <label for="check5">джемы</label>
             </li>
           </ul>
         </fieldset>
@@ -434,7 +434,7 @@
     <nav class="footer-navigation">
       <h3 class="visually-hidden">Информация для заинтресованных лиц</h3>
       <ul class="footer-navigation-list">
-        <li class="footer-navigation-item"><a href="#">Для поставщиков</a></li>
+        <li class="footer-navigation-item"><a href="#"><strong>Для поставщиков</strong></a></li>
         <li class="footer-navigation-item"><a href="#">О производстве</a></li>
         <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
         <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
